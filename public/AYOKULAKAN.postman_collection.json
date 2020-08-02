@@ -1,0 +1,2955 @@
+{
+	"info": {
+		"_postman_id": "db17668d-46fe-4f7c-8de8-9512813c8e3e",
+		"name": "AYOKULAKAN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "REGISTER",
+			"item": [
+				{
+					"name": "https://ayokulakan.com/api/register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "legrons",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "omlegrons@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "nama",
+									"value": "legron",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://ayokulakan.com/api/register",
+							"protocol": "https",
+							"host": [
+								"ayokulakan",
+								"com"
+							],
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "LOGIN",
+			"item": [
+				{
+					"name": "https://ayokulakan.com/api/login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "omlegrons@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "password",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://ayokulakan.com/api/login",
+							"protocol": "https",
+							"host": [
+								"ayokulakan",
+								"com"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "BERITA",
+			"item": [
+				{
+					"name": "https://ayokulakan.com/api/berita?judul= bebas &kategori= Slider / Berita / Diskon / Iklan / Promosi &id= 1 &limit= 10",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://ayokulakan.com/api/berita?judul= bebas &kategori= Slider / Berita / Diskon / Iklan / Promosi &id= 1 &limit= 10",
+							"protocol": "https",
+							"host": [
+								"ayokulakan",
+								"com"
+							],
+							"path": [
+								"api",
+								"berita"
+							],
+							"query": [
+								{
+									"key": "judul",
+									"value": " bebas "
+								},
+								{
+									"key": "kategori",
+									"value": " Slider / Berita / Diskon / Iklan / Promosi "
+								},
+								{
+									"key": "id",
+									"value": " 1 "
+								},
+								{
+									"key": "limit",
+									"value": " 10"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "LAPAK",
+			"item": [
+				{
+					"name": "https://ayokulakan.com/api/lapak?nama_lapak= bebas &id= 1&limit= 10",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://ayokulakan.com/api/lapak?includes=creator,attachments,negara,provinsi,kota,kecamatan",
+							"protocol": "https",
+							"host": [
+								"ayokulakan",
+								"com"
+							],
+							"path": [
+								"api",
+								"lapak"
+							],
+							"query": [
+								{
+									"key": "nama_lapak",
+									"value": " bebas ",
+									"disabled": true
+								},
+								{
+									"key": "id",
+									"value": " 1",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": " 10",
+									"disabled": true
+								},
+								{
+									"key": "includes",
+									"value": "creator,attachments,negara,provinsi,kota,kecamatan"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://ayokulakan.com/api/lapak/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://ayokulakan.com/api/lapak/1",
+							"protocol": "https",
+							"host": [
+								"ayokulakan",
+								"com"
+							],
+							"path": [
+								"api",
+								"lapak",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://ayokulakan.com/api/lapak",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama_lapak",
+									"value": " lapak ",
+									"type": "text"
+								},
+								{
+									"key": "deskripsi_lapak",
+									"value": " lapak ",
+									"type": "text"
+								},
+								{
+									"key": "alamat_lapak",
+									"value": " lapak ",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": " 01283192312321 ",
+									"type": "text"
+								},
+								{
+									"key": "id_negara",
+									"value": " 1 ",
+									"type": "text"
+								},
+								{
+									"key": "id_provinsi",
+									"value": " 1 ",
+									"type": "text"
+								},
+								{
+									"key": "id_kota",
+									"value": " 1 ",
+									"type": "text"
+								},
+								{
+									"key": "id_kecamatan",
+									"value": " 1 ",
+									"type": "text"
+								},
+								{
+									"key": "kode_pos",
+									"value": " 123 ",
+									"type": "text"
+								},
+								{
+									"key": "deskripsi",
+									"value": " ampas ",
+									"type": "text"
+								},
+								{
+									"key": "created_by",
+									"value": " 1",
+									"type": "text"
+								},
+								{
+									"key": "attachment[]",
+									"type": "file",
+									"src": ""
+								}
+							]
+						},
+						"url": {
+							"raw": "https://ayokulakan.com/api/lapak",
+							"protocol": "https",
+							"host": [
+								"ayokulakan",
+								"com"
+							],
+							"path": [
+								"api",
+								"lapak"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://ayokulakan.com/api/lapak/1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama_lapak",
+									"value": " lapak ",
+									"type": "text"
+								},
+								{
+									"key": "deskripsi_lapak",
+									"value": " lapak ",
+									"type": "text"
+								},
+								{
+									"key": "alamat_lapak",
+									"value": " lapak ",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": " 01283192312321 ",
+									"type": "text"
+								},
+								{
+									"key": "id_negara",
+									"value": " 1 ",
+									"type": "text"
+								},
+								{
+									"key": "id_provinsi",
+									"value": " 1 ",
+									"type": "text"
+								},
+								{
+									"key": "id_kota",
+									"value": " 1 ",
+									"type": "text"
+								},
+								{
+									"key": "id_kecamatan",
+									"value": " 1 ",
+									"type": "text"
+								},
+								{
+									"key": "kode_pos",
+									"value": " 123 ",
+									"type": "text"
+								},
+								{
+									"key": "deskripsi",
+									"value": " ampas ",
+									"type": "text"
+								},
+								{
+									"key": "created_by",
+									"value": " 1",
+									"type": "text"
+								},
+								{
+									"key": "attachment[]",
+									"type": "file",
+									"src": ""
+								},
+								{
+									"key": "",
+									"value": "put",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://ayokulakan.com/api/lapak/1",
+							"protocol": "https",
+							"host": [
+								"ayokulakan",
+								"com"
+							],
+							"path": [
+								"api",
+								"lapak",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://ayokulakan.com/api/lapak/1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://ayokulakan.com/api/lapak/1",
+							"protocol": "https",
+							"host": [
+								"ayokulakan",
+								"com"
+							],
+							"path": [
+								"api",
+								"lapak",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "BARANG",
+			"item": [
+				{
+					"name": "https://ayokulakan.com/api/barang?id_trans_lapak= 1&nama_barang= ikan ",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://olshop.test/api/barang?includes=creator,attachments,kategoriBarang,subKategoriBarang,childKategoriBarang",
+							"protocol": "http",
+							"host": [
+								"olshop",
+								"test"
+							],
+							"path": [
+								"api",
+								"barang"
+							],
+							"query": [
+								{
+									"key": "id_trans_lapak",
+									"value": " 1",
+									"disabled": true
+								},
+								{
+									"key": "nama_barang",
+									"value": " ikan ",
+									"disabled": true
+								},
+								{
+									"key": "includes",
+									"value": "creator,attachments,kategoriBarang,subKategoriBarang,childKategoriBarang"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://ayokulakan.com/api/barang/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://ayokulakan.com/api/barang/1",
+							"protocol": "https",
+							"host": [
+								"ayokulakan",
+								"com"
+							],
+							"path": [
+								"api",
+								"barang",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://ayokulakan.com/api/barang",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama_barang",
+									"value": " ikan ",
+									"type": "text"
+								},
+								{
+									"key": "deskripsi_barang",
+									"value": " ikan ",
+									"type": "text"
+								},
+								{
+									"key": "satuan_barang",
+									"value": " (Buah / Lusin / Box / Kodi / Gross / Rim / Drum / Krat / Slop / Pcs / Liter) ",
+									"type": "text"
+								},
+								{
+									"key": "harga_barang",
+									"value": " 10000 ",
+									"type": "text"
+								},
+								{
+									"key": "id_kategori",
+									"value": " 1 ",
+									"type": "text"
+								},
+								{
+									"key": "id_sub_kategori",
+									"value": " 1 ",
+									"type": "text"
+								},
+								{
+									"key": "id_child_kategori",
+									"value": " 1 ",
+									"type": "text"
+								},
+								{
+									"key": "berat_barang",
+									"value": " 100 ",
+									"type": "text"
+								},
+								{
+									"key": "stock_barang",
+									"value": " 1 ",
+									"type": "text"
+								},
+								{
+									"key": "minimum_pembelian",
+									"value": " 1 ",
+									"type": "text"
+								},
+								{
+									"key": "kondisi_barang",
+									"value": " BEKAS ",
+									"type": "text"
+								},
+								{
+									"key": "merek",
+									"value": " merek ",
+									"type": "text"
+								},
+								{
+									"key": "expired",
+									"value": " 1995-05-16 ",
+									"type": "text"
+								},
+								{
+									"key": "attachment[]",
+									"value": " file ",
+									"type": "text"
+								},
+								{
+									"key": "created_by",
+									"value": "1 ",
+									"type": "text"
+								},
+								{
+									"key": "id_lapak",
+									"value": " 1",
+									"type": "text"
+								},
+								{
+									"key": "attachment[]",
+									"type": "file",
+									"src": ""
+								}
+							]
+						},
+						"url": {
+							"raw": "https://ayokulakan.com/api/barang",
+							"protocol": "https",
+							"host": [
+								"ayokulakan",
+								"com"
+							],
+							"path": [
+								"api",
+								"barang"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://ayokulakan.com/api/barang/1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama_barang",
+									"value": " ikan ",
+									"type": "text"
+								},
+								{
+									"key": "deskripsi_barang",
+									"value": " ikan ",
+									"type": "text"
+								},
+								{
+									"key": "satuan_barang",
+									"value": " (Buah / Lusin / Box / Kodi / Gross / Rim / Drum / Krat / Slop / Pcs / Liter) ",
+									"type": "text"
+								},
+								{
+									"key": "harga_barang",
+									"value": " 10000 ",
+									"type": "text"
+								},
+								{
+									"key": "id_kategori",
+									"value": " 1 ",
+									"type": "text"
+								},
+								{
+									"key": "id_sub_kategori",
+									"value": " 1 ",
+									"type": "text"
+								},
+								{
+									"key": "id_child_kategori",
+									"value": " 1 ",
+									"type": "text"
+								},
+								{
+									"key": "berat_barang",
+									"value": " 100 ",
+									"type": "text"
+								},
+								{
+									"key": "stock_barang",
+									"value": " 1 ",
+									"type": "text"
+								},
+								{
+									"key": "minimum_pembelian",
+									"value": " 1 ",
+									"type": "text"
+								},
+								{
+									"key": "kondisi_barang",
+									"value": " BEKAS ",
+									"type": "text"
+								},
+								{
+									"key": "merek",
+									"value": " merek ",
+									"type": "text"
+								},
+								{
+									"key": "expired",
+									"value": " 1995-05-16 ",
+									"type": "text"
+								},
+								{
+									"key": "attachment[]",
+									"value": " file ",
+									"type": "text"
+								},
+								{
+									"key": "created_by",
+									"value": "1 ",
+									"type": "text"
+								},
+								{
+									"key": "id_lapak",
+									"value": " 1",
+									"type": "text"
+								},
+								{
+									"key": "method",
+									"value": "put",
+									"type": "text"
+								},
+								{
+									"key": "attachment[]",
+									"type": "file",
+									"src": ""
+								}
+							]
+						},
+						"url": {
+							"raw": "https://ayokulakan.com/api/barang/1",
+							"protocol": "https",
+							"host": [
+								"ayokulakan",
+								"com"
+							],
+							"path": [
+								"api",
+								"barang",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://ayokulakan.com/api/barang/1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://ayokulakan.com/api/barang/1",
+							"protocol": "https",
+							"host": [
+								"ayokulakan",
+								"com"
+							],
+							"path": [
+								"api",
+								"barang",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TENTANG APLIKASI",
+			"item": [
+				{
+					"name": "https://ayokulakan.com/api/aplikasi",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://ayokulakan.com/api/aplikasi",
+							"protocol": "https",
+							"host": [
+								"ayokulakan",
+								"com"
+							],
+							"path": [
+								"api",
+								"aplikasi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://ayokulakan.com/api/aplikasi/aturan",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://ayokulakan.com/api/aplikasi/aturan",
+							"protocol": "https",
+							"host": [
+								"ayokulakan",
+								"com"
+							],
+							"path": [
+								"api",
+								"aplikasi",
+								"aturan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://ayokulakan.com/api/aplikasi/privasi",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://ayokulakan.com/api/aplikasi/privasi",
+							"protocol": "https",
+							"host": [
+								"ayokulakan",
+								"com"
+							],
+							"path": [
+								"api",
+								"aplikasi",
+								"privasi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://ayokulakan.com/api/aplikasi/brand",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://ayokulakan.com/api/aplikasi/brand",
+							"protocol": "https",
+							"host": [
+								"ayokulakan",
+								"com"
+							],
+							"path": [
+								"api",
+								"aplikasi",
+								"brand"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://ayokulakan.com/api/aplikasi/kontak",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://ayokulakan.com/api/aplikasi/kontak",
+							"protocol": "https",
+							"host": [
+								"ayokulakan",
+								"com"
+							],
+							"path": [
+								"api",
+								"aplikasi",
+								"kontak"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://ayokulakan.com/api/aplikasi/panduanpelapak\t",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://ayokulakan.com/api/aplikasi/panduanpelapak",
+							"protocol": "https",
+							"host": [
+								"ayokulakan",
+								"com"
+							],
+							"path": [
+								"api",
+								"aplikasi",
+								"panduanpelapak"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://ayokulakan.com/api/aplikasi/panduanpembeli\t",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://ayokulakan.com/api/aplikasi/panduanpembeli",
+							"protocol": "https",
+							"host": [
+								"ayokulakan",
+								"com"
+							],
+							"path": [
+								"api",
+								"aplikasi",
+								"panduanpembeli"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://ayokulakan.com/api/aplikasi/bantuan",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://ayokulakan.com/api/aplikasi/bantuan",
+							"protocol": "https",
+							"host": [
+								"ayokulakan",
+								"com"
+							],
+							"path": [
+								"api",
+								"aplikasi",
+								"bantuan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://ayokulakan.com/api/aplikasi/haji",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://ayokulakan.com/api/aplikasi/haji",
+							"protocol": "https",
+							"host": [
+								"ayokulakan",
+								"com"
+							],
+							"path": [
+								"api",
+								"aplikasi",
+								"haji"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://ayokulakan.com/api/aplikasi/kurir",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://ayokulakan.com/api/aplikasi/kurir",
+							"protocol": "https",
+							"host": [
+								"ayokulakan",
+								"com"
+							],
+							"path": [
+								"api",
+								"aplikasi",
+								"kurir"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SOSIAL MEDIA",
+			"item": [
+				{
+					"name": "https://ayokulakan.com/api/aplikasi/sosial?sosial_media= FB",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://ayokulakan.com/api/aplikasi/sosial?sosial_media= FB",
+							"protocol": "https",
+							"host": [
+								"ayokulakan",
+								"com"
+							],
+							"path": [
+								"api",
+								"aplikasi",
+								"sosial"
+							],
+							"query": [
+								{
+									"key": "sosial_media",
+									"value": " FB",
+									"description": "PILIH SALAH SATU FB / Twitter / Instagram"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "WILAYAH",
+			"item": [
+				{
+					"name": "https://ayokulakan.com/api/wilayah/negara?negara=indonesia &page=5 &id=1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://ayokulakan.com/api/wilayah/negara?negara=indonesia &page=5 &id=1",
+							"protocol": "https",
+							"host": [
+								"ayokulakan",
+								"com"
+							],
+							"path": [
+								"api",
+								"wilayah",
+								"negara"
+							],
+							"query": [
+								{
+									"key": "negara",
+									"value": "indonesia "
+								},
+								{
+									"key": "page",
+									"value": "5 "
+								},
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://ayokulakan.com/api/wilayah/provinsi?provinsi=jawa timur &page=5 &id=1 &id_negara=1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://ayokulakan.com/api/wilayah/provinsi?provinsi=jawa timur &page=5 &id=1 &id_negara=1",
+							"protocol": "https",
+							"host": [
+								"ayokulakan",
+								"com"
+							],
+							"path": [
+								"api",
+								"wilayah",
+								"provinsi"
+							],
+							"query": [
+								{
+									"key": "provinsi",
+									"value": "jawa timur "
+								},
+								{
+									"key": "page",
+									"value": "5 "
+								},
+								{
+									"key": "id",
+									"value": "1 "
+								},
+								{
+									"key": "id_negara",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://ayokulakan.com/api/wilayah/kota?kota=bandung &page=5 &id=1 &id_negara=1 &id_provinsi=2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://ayokulakan.com/api/wilayah/kota?kota=bandung &page=5 &id=1 &id_negara=1 &id_provinsi=2",
+							"protocol": "https",
+							"host": [
+								"ayokulakan",
+								"com"
+							],
+							"path": [
+								"api",
+								"wilayah",
+								"kota"
+							],
+							"query": [
+								{
+									"key": "kota",
+									"value": "bandung "
+								},
+								{
+									"key": "page",
+									"value": "5 "
+								},
+								{
+									"key": "id",
+									"value": "1 "
+								},
+								{
+									"key": "id_negara",
+									"value": "1 "
+								},
+								{
+									"key": "id_provinsi",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://ayokulakan.com/api/wilayah/kecamatan?kecamatan=arcamanik &id_kota=4 &page=5 &id=1 &id_negara=1 &id_provinsi=2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://ayokulakan.com/api/wilayah/kecamatan?kecamatan=arcamanik &id_kota=4 &page=5 &id=1 &id_negara=1 &id_provinsi=2",
+							"protocol": "https",
+							"host": [
+								"ayokulakan",
+								"com"
+							],
+							"path": [
+								"api",
+								"wilayah",
+								"kecamatan"
+							],
+							"query": [
+								{
+									"key": "kecamatan",
+									"value": "arcamanik "
+								},
+								{
+									"key": "id_kota",
+									"value": "4 "
+								},
+								{
+									"key": "page",
+									"value": "5 "
+								},
+								{
+									"key": "id",
+									"value": "1 "
+								},
+								{
+									"key": "id_negara",
+									"value": "1 "
+								},
+								{
+									"key": "id_provinsi",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "KATEGORI BARANG",
+			"item": [
+				{
+					"name": "FIRST CATEGORY",
+					"item": [
+						{
+							"name": "https://ayokulakan.com/api/kategori?nama_barang= AMPAS&page=5&id=1",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://ayokulakan.com/api/kategori?nama_barang= AMPAS&page=5&id=1",
+									"protocol": "https",
+									"host": [
+										"ayokulakan",
+										"com"
+									],
+									"path": [
+										"api",
+										"kategori"
+									],
+									"query": [
+										{
+											"key": "nama_barang",
+											"value": " AMPAS"
+										},
+										{
+											"key": "page",
+											"value": "5"
+										},
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "SECOND CATEGORY",
+					"item": [
+						{
+							"name": "https://ayokulakan.com/api/kategori/subchild?nama_barang= AMPAS&page=5 &id=1",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://ayokulakan.com/api/kategori/subchild?nama_barang= AMPAS&page=5 &id=1",
+									"protocol": "https",
+									"host": [
+										"ayokulakan",
+										"com"
+									],
+									"path": [
+										"api",
+										"kategori",
+										"subchild"
+									],
+									"query": [
+										{
+											"key": "nama_barang",
+											"value": " AMPAS"
+										},
+										{
+											"key": "page",
+											"value": "5 "
+										},
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "THIRD CATEGORY",
+					"item": [
+						{
+							"name": "https://ayokulakan.com/api/kategori/child?nama_barang= AMPAS&page=5 &id=1",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://ayokulakan.com/api/kategori/child?nama_barang= AMPAS&page=5 &id=1",
+									"protocol": "https",
+									"host": [
+										"ayokulakan",
+										"com"
+									],
+									"path": [
+										"api",
+										"kategori",
+										"child"
+									],
+									"query": [
+										{
+											"key": "nama_barang",
+											"value": " AMPAS"
+										},
+										{
+											"key": "page",
+											"value": "5 "
+										},
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		},
+		{
+			"name": "FAVORIT BARANG / CART",
+			"item": [
+				{
+					"name": "GET ALL",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "include",
+								"value": "creator",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://ayokulakan.com/api/favorit-barang?includes=creator,barang,barang.attachments",
+							"protocol": "https",
+							"host": [
+								"ayokulakan",
+								"com"
+							],
+							"path": [
+								"api",
+								"favorit-barang"
+							],
+							"query": [
+								{
+									"key": "includes",
+									"value": "creator,barang,barang.attachments"
+								},
+								{
+									"key": "nama_barang",
+									"value": " ikan ",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ONE",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "include",
+								"value": "creator",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://ayokulakan.com/api/favorit-barang/1?",
+							"protocol": "https",
+							"host": [
+								"ayokulakan",
+								"com"
+							],
+							"path": [
+								"api",
+								"favorit-barang",
+								"1"
+							],
+							"query": [
+								{
+									"key": "nama_barang",
+									"value": " ikan ",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "include",
+								"value": "creator",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "9",
+									"type": "text"
+								},
+								{
+									"key": "id_barang",
+									"value": "112",
+									"type": "text"
+								},
+								{
+									"key": "created_by",
+									"value": "9",
+									"type": "text"
+								},
+								{
+									"key": "jumlah_barang",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://ayokulakan.com/api/favorit-barang?",
+							"protocol": "https",
+							"host": [
+								"ayokulakan",
+								"com"
+							],
+							"path": [
+								"api",
+								"favorit-barang"
+							],
+							"query": [
+								{
+									"key": "nama_barang",
+									"value": " ikan ",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EDIT",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "include",
+								"value": "creator",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "71",
+									"type": "text"
+								},
+								{
+									"key": "id_barang",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "created_by",
+									"value": "71",
+									"type": "text"
+								},
+								{
+									"key": "jumlah_barang",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://ayokulakan.com/api/favorit-barang/1?",
+							"protocol": "https",
+							"host": [
+								"ayokulakan",
+								"com"
+							],
+							"path": [
+								"api",
+								"favorit-barang",
+								"1"
+							],
+							"query": [
+								{
+									"key": "nama_barang",
+									"value": " ikan ",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "include",
+								"value": "creator",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "71",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "id_barang",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "created_by",
+									"value": "71",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "jumlah_barang",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "https://ayokulakan.com/api/favorit-barang/1?",
+							"protocol": "https",
+							"host": [
+								"ayokulakan",
+								"com"
+							],
+							"path": [
+								"api",
+								"favorit-barang",
+								"1"
+							],
+							"query": [
+								{
+									"key": "nama_barang",
+									"value": " ikan ",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CREDIT CARD",
+			"item": [
+				{
+					"name": "http://olshop.test/api/credit-card",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://olshop.test/api/credit-card",
+							"protocol": "http",
+							"host": [
+								"olshop",
+								"test"
+							],
+							"path": [
+								"api",
+								"credit-card"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://olshop.test/api/credit-card?includes=creator",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://olshop.test/api/credit-card?includes=creator",
+							"protocol": "http",
+							"host": [
+								"olshop",
+								"test"
+							],
+							"path": [
+								"api",
+								"credit-card"
+							],
+							"query": [
+								{
+									"key": "includes",
+									"value": "creator"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://olshop.test/api/credit-card/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://olshop.test/api/credit-card/1",
+							"protocol": "http",
+							"host": [
+								"olshop",
+								"test"
+							],
+							"path": [
+								"api",
+								"credit-card",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://olshop.test/api/credit-card/1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "10",
+									"description": "10 -> Active / 11 -> Not Active",
+									"type": "text"
+								},
+								{
+									"key": "no_kartu",
+									"value": "123123",
+									"type": "text"
+								},
+								{
+									"key": "bulan",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "tahun",
+									"value": "2019",
+									"type": "text"
+								},
+								{
+									"key": "cvv",
+									"value": "14045",
+									"type": "text"
+								},
+								{
+									"key": "created_by",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "type_target",
+									"value": "....",
+									"description": "bisa nama bank bisa hanya credit card",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://olshop.test/api/credit-card/1",
+							"protocol": "http",
+							"host": [
+								"olshop",
+								"test"
+							],
+							"path": [
+								"api",
+								"credit-card",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://olshop.test/api/credit-card",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "71",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "10",
+									"description": "10 -> Active / 11 -> Not Active",
+									"type": "text"
+								},
+								{
+									"key": "no_kartu",
+									"value": "123123",
+									"type": "text"
+								},
+								{
+									"key": "bulan",
+									"value": "11",
+									"type": "text"
+								},
+								{
+									"key": "tahun",
+									"value": "2019",
+									"type": "text"
+								},
+								{
+									"key": "cvv",
+									"value": "14045",
+									"type": "text"
+								},
+								{
+									"key": "created_by",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "type_target",
+									"value": "....",
+									"description": "bisa nama bank bisa hanya credit card",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://olshop.test/api/credit-card",
+							"protocol": "http",
+							"host": [
+								"olshop",
+								"test"
+							],
+							"path": [
+								"api",
+								"credit-card"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://olshop.test/api/credit-card/2",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "71",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "10",
+									"description": "10 -> Active / 11 -> Not Active",
+									"type": "text"
+								},
+								{
+									"key": "no_kartu",
+									"value": "123123",
+									"type": "text"
+								},
+								{
+									"key": "bulan",
+									"value": "11",
+									"type": "text"
+								},
+								{
+									"key": "tahun",
+									"value": "2019",
+									"type": "text"
+								},
+								{
+									"key": "cvv",
+									"value": "14045",
+									"type": "text"
+								},
+								{
+									"key": "created_by",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "type_target",
+									"value": "....",
+									"description": "bisa nama bank bisa hanya credit card",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://olshop.test/api/credit-card/2",
+							"protocol": "http",
+							"host": [
+								"olshop",
+								"test"
+							],
+							"path": [
+								"api",
+								"credit-card",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PROFILE",
+			"item": [
+				{
+					"name": "GET ONE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://ayokulakan.com/api/profile/9",
+							"protocol": "https",
+							"host": [
+								"ayokulakan",
+								"com"
+							],
+							"path": [
+								"api",
+								"profile",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama",
+									"value": "ampas",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "emailasli@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "ampas",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "ampas",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "ampas",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "Laki - Laki",
+									"description": "// Laki - Laki // Perempuan",
+									"type": "text"
+								},
+								{
+									"key": "hp",
+									"value": "0896768676",
+									"type": "text"
+								},
+								{
+									"key": "id_negara",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "id_kota",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "id_kecamatan",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "kode_pos",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "method",
+									"value": "put",
+									"type": "text"
+								},
+								{
+									"key": "foto_users[]",
+									"type": "file",
+									"src": ""
+								}
+							]
+						},
+						"url": {
+							"raw": "https://ayokulakan.com/api/profile/9",
+							"protocol": "https",
+							"host": [
+								"ayokulakan",
+								"com"
+							],
+							"path": [
+								"api",
+								"profile",
+								"9"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TRANSAKSI",
+			"item": [
+				{
+					"name": "BANK TRANSFER",
+					"item": [
+						{
+							"name": "POST TRANSAKSI BNI",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "server_key",
+											"value": "SB-Mid-server-nbTUBUghOMOqGjXHJzb-p9nh",
+											"type": "text"
+										},
+										{
+											"key": "transaction_details[gross_amount]",
+											"value": "50000",
+											"type": "text"
+										},
+										{
+											"key": "transaction_details[card_number]",
+											"value": "4811 1111 1111 1114",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "transaction_details[card_cvv]",
+											"value": "123",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "transaction_details[card_exp_month]",
+											"value": "12",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "transaction_details[card_exp_year]",
+											"value": "2024",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "secure",
+											"value": "true",
+											"type": "text"
+										},
+										{
+											"key": "user_id",
+											"value": "70",
+											"type": "text"
+										},
+										{
+											"key": "bank_transfer[bank]",
+											"value": "bni",
+											"type": "text"
+										},
+										{
+											"key": "bank_transfer[va_number]",
+											"value": "111111",
+											"type": "text"
+										},
+										{
+											"key": "customer_details[user_id]",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "customer_details[email]",
+											"value": "ayokulakan@ayokulakan.com",
+											"type": "text"
+										},
+										{
+											"key": "customer_details[first_name]",
+											"value": "ayokulakan",
+											"type": "text"
+										},
+										{
+											"key": "customer_details[last_name]",
+											"value": "ayokulakans",
+											"type": "text"
+										},
+										{
+											"key": "customer_details[phone]",
+											"value": "08954226419617",
+											"type": "text"
+										},
+										{
+											"key": "item_details[0][id]",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "item_details[0][price]",
+											"value": "50000",
+											"description": "wajib integer",
+											"type": "text"
+										},
+										{
+											"key": "item_details[0][quantity]",
+											"value": "1",
+											"description": "wajib integer",
+											"type": "text"
+										},
+										{
+											"key": "item_details[0][name]",
+											"value": "ampas",
+											"type": "text"
+										},
+										{
+											"key": "payment_type",
+											"value": "bank_transfer",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://olshop.test/api/transaksi",
+									"protocol": "http",
+									"host": [
+										"olshop",
+										"test"
+									],
+									"path": [
+										"api",
+										"transaksi"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "POST TRANSAKSI BCA",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "server_key",
+											"value": "SB-Mid-server-nbTUBUghOMOqGjXHJzb-p9nh",
+											"type": "text"
+										},
+										{
+											"key": "transaction_details[gross_amount]",
+											"value": "50000",
+											"type": "text"
+										},
+										{
+											"key": "transaction_details[card_number]",
+											"value": "4811 1111 1111 1114",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "transaction_details[card_cvv]",
+											"value": "123",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "transaction_details[card_exp_month]",
+											"value": "12",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "transaction_details[card_exp_year]",
+											"value": "2024",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "secure",
+											"value": "true",
+											"type": "text"
+										},
+										{
+											"key": "user_id",
+											"value": "70",
+											"type": "text"
+										},
+										{
+											"key": "bank_transfer[bank]",
+											"value": "bca",
+											"type": "text"
+										},
+										{
+											"key": "bank_transfer[va_number]",
+											"value": "111111",
+											"type": "text"
+										},
+										{
+											"key": "customer_details[user_id]",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "customer_details[email]",
+											"value": "ayokulakan@ayokulakan.com",
+											"type": "text"
+										},
+										{
+											"key": "customer_details[first_name]",
+											"value": "ayokulakan",
+											"type": "text"
+										},
+										{
+											"key": "customer_details[last_name]",
+											"value": "ayokulakans",
+											"type": "text"
+										},
+										{
+											"key": "customer_details[phone]",
+											"value": "08954226419617",
+											"type": "text"
+										},
+										{
+											"key": "item_details[0][id]",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "item_details[0][price]",
+											"value": "50000",
+											"description": "wajib integer",
+											"type": "text"
+										},
+										{
+											"key": "item_details[0][quantity]",
+											"value": "1",
+											"description": "wajib integer",
+											"type": "text"
+										},
+										{
+											"key": "item_details[0][name]",
+											"value": "ampas",
+											"type": "text"
+										},
+										{
+											"key": "payment_type",
+											"value": "bank_transfer",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://olshop.test/api/transaksi",
+									"protocol": "http",
+									"host": [
+										"olshop",
+										"test"
+									],
+									"path": [
+										"api",
+										"transaksi"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "POST TRANSAKSI PERMATA",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "server_key",
+											"value": "SB-Mid-server-nbTUBUghOMOqGjXHJzb-p9nh",
+											"type": "text"
+										},
+										{
+											"key": "transaction_details[gross_amount]",
+											"value": "50000",
+											"type": "text"
+										},
+										{
+											"key": "transaction_details[card_number]",
+											"value": "4811 1111 1111 1114",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "transaction_details[card_cvv]",
+											"value": "123",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "transaction_details[card_exp_month]",
+											"value": "12",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "transaction_details[card_exp_year]",
+											"value": "2024",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "secure",
+											"value": "true",
+											"type": "text"
+										},
+										{
+											"key": "user_id",
+											"value": "70",
+											"type": "text"
+										},
+										{
+											"key": "bank_transfer[bank]",
+											"value": "permata",
+											"type": "text"
+										},
+										{
+											"key": "bank_transfer[va_number]",
+											"value": "1111111111",
+											"type": "text"
+										},
+										{
+											"key": "customer_details[user_id]",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "customer_details[email]",
+											"value": "ayokulakan@ayokulakan.com",
+											"type": "text"
+										},
+										{
+											"key": "customer_details[first_name]",
+											"value": "ayokulakan",
+											"type": "text"
+										},
+										{
+											"key": "customer_details[last_name]",
+											"value": "ayokulakans",
+											"type": "text"
+										},
+										{
+											"key": "customer_details[phone]",
+											"value": "08954226419617",
+											"type": "text"
+										},
+										{
+											"key": "item_details[0][id]",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "item_details[0][price]",
+											"value": "50000",
+											"description": "wajib integer",
+											"type": "text"
+										},
+										{
+											"key": "item_details[0][quantity]",
+											"value": "1",
+											"description": "wajib integer",
+											"type": "text"
+										},
+										{
+											"key": "item_details[0][name]",
+											"value": "ampas",
+											"type": "text"
+										},
+										{
+											"key": "payment_type",
+											"value": "bank_transfer",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://olshop.test/api/transaksi",
+									"protocol": "http",
+									"host": [
+										"olshop",
+										"test"
+									],
+									"path": [
+										"api",
+										"transaksi"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "INTERNET BANKING",
+					"item": [
+						{
+							"name": "POST BCA CLICKPAY",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "server_key",
+											"value": "SB-Mid-server-nbTUBUghOMOqGjXHJzb-p9nh",
+											"type": "text"
+										},
+										{
+											"key": "transaction_details[gross_amount]",
+											"value": "50000",
+											"type": "text"
+										},
+										{
+											"key": "transaction_details[card_number]",
+											"value": "4811 1111 1111 1114",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "transaction_details[card_cvv]",
+											"value": "123",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "transaction_details[card_exp_month]",
+											"value": "12",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "transaction_details[card_exp_year]",
+											"value": "2024",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "secure",
+											"value": "true",
+											"type": "text"
+										},
+										{
+											"key": "user_id",
+											"value": "70",
+											"type": "text"
+										},
+										{
+											"key": "bank_transfer[bank]",
+											"value": "bca_klikpay",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "bank_transfer[va_number]",
+											"value": "1111111111",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "customer_details[user_id]",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "customer_details[email]",
+											"value": "ayokulakan@ayokulakan.com",
+											"type": "text"
+										},
+										{
+											"key": "customer_details[first_name]",
+											"value": "ayokulakan",
+											"type": "text"
+										},
+										{
+											"key": "customer_details[last_name]",
+											"value": "ayokulakans",
+											"type": "text"
+										},
+										{
+											"key": "customer_details[phone]",
+											"value": "08954226419617",
+											"type": "text"
+										},
+										{
+											"key": "item_details[0][id]",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "item_details[0][price]",
+											"value": "50000",
+											"description": "wajib integer",
+											"type": "text"
+										},
+										{
+											"key": "item_details[0][quantity]",
+											"value": "1",
+											"description": "wajib integer",
+											"type": "text"
+										},
+										{
+											"key": "item_details[0][name]",
+											"value": "ampas",
+											"type": "text"
+										},
+										{
+											"key": "payment_type",
+											"value": "bca_klikpay",
+											"type": "text"
+										},
+										{
+											"key": "bca_klikpay[description]",
+											"value": "ampas",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://olshop.test/api/transaksi",
+									"protocol": "http",
+									"host": [
+										"olshop",
+										"test"
+									],
+									"path": [
+										"api",
+										"transaksi"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "CS STORE",
+					"item": [
+						{
+							"name": "POST TRANSAKSI INDOMARET",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "server_key",
+											"value": "SB-Mid-server-nbTUBUghOMOqGjXHJzb-p9nh",
+											"type": "text"
+										},
+										{
+											"key": "transaction_details[gross_amount]",
+											"value": "50000",
+											"type": "text"
+										},
+										{
+											"key": "transaction_details[card_number]",
+											"value": "4811 1111 1111 1114",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "transaction_details[card_cvv]",
+											"value": "123",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "transaction_details[card_exp_month]",
+											"value": "12",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "transaction_details[card_exp_year]",
+											"value": "2024",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "secure",
+											"value": "true",
+											"type": "text"
+										},
+										{
+											"key": "user_id",
+											"value": "70",
+											"type": "text"
+										},
+										{
+											"key": "bank_transfer[bank]",
+											"value": "bca_klikpay",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "bank_transfer[va_number]",
+											"value": "1111111111",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "customer_details[user_id]",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "customer_details[email]",
+											"value": "ayokulakan@ayokulakan.com",
+											"type": "text"
+										},
+										{
+											"key": "customer_details[first_name]",
+											"value": "ayokulakan",
+											"type": "text"
+										},
+										{
+											"key": "customer_details[last_name]",
+											"value": "ayokulakans",
+											"type": "text"
+										},
+										{
+											"key": "customer_details[phone]",
+											"value": "08954226419617",
+											"type": "text"
+										},
+										{
+											"key": "item_details[0][id]",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "item_details[0][price]",
+											"value": "50000",
+											"description": "wajib integer",
+											"type": "text"
+										},
+										{
+											"key": "item_details[0][quantity]",
+											"value": "1",
+											"description": "wajib integer",
+											"type": "text"
+										},
+										{
+											"key": "item_details[0][name]",
+											"value": "ampas",
+											"type": "text"
+										},
+										{
+											"key": "payment_type",
+											"value": "cstore",
+											"type": "text"
+										},
+										{
+											"key": "bca_klikbca[description]",
+											"value": "ampas",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "bca_klikbca[user_id]",
+											"value": "1",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "cstore[store]",
+											"value": "Indomaret",
+											"type": "text"
+										},
+										{
+											"key": "cstore[message]",
+											"value": "BAYAR BARANG BELANJAAN AMPAS",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://olshop.test/api/transaksi",
+									"protocol": "http",
+									"host": [
+										"olshop",
+										"test"
+									],
+									"path": [
+										"api",
+										"transaksi"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "POST TRANSAKSI ALFAMART",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "server_key",
+											"value": "SB-Mid-server-nbTUBUghOMOqGjXHJzb-p9nh",
+											"type": "text"
+										},
+										{
+											"key": "transaction_details[gross_amount]",
+											"value": "50000",
+											"type": "text"
+										},
+										{
+											"key": "transaction_details[card_number]",
+											"value": "4811 1111 1111 1114",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "transaction_details[card_cvv]",
+											"value": "123",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "transaction_details[card_exp_month]",
+											"value": "12",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "transaction_details[card_exp_year]",
+											"value": "2024",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "secure",
+											"value": "true",
+											"type": "text"
+										},
+										{
+											"key": "user_id",
+											"value": "70",
+											"type": "text"
+										},
+										{
+											"key": "bank_transfer[bank]",
+											"value": "bca_klikpay",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "bank_transfer[va_number]",
+											"value": "1111111111",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "customer_details[user_id]",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "customer_details[email]",
+											"value": "ayokulakan@ayokulakan.com",
+											"type": "text"
+										},
+										{
+											"key": "customer_details[first_name]",
+											"value": "ayokulakan",
+											"type": "text"
+										},
+										{
+											"key": "customer_details[last_name]",
+											"value": "ayokulakans",
+											"type": "text"
+										},
+										{
+											"key": "customer_details[phone]",
+											"value": "08954226419617",
+											"type": "text"
+										},
+										{
+											"key": "item_details[0][id]",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "item_details[0][price]",
+											"value": "50000",
+											"description": "wajib integer",
+											"type": "text"
+										},
+										{
+											"key": "item_details[0][quantity]",
+											"value": "1",
+											"description": "wajib integer",
+											"type": "text"
+										},
+										{
+											"key": "item_details[0][name]",
+											"value": "ampas",
+											"type": "text"
+										},
+										{
+											"key": "payment_type",
+											"value": "cstore",
+											"type": "text"
+										},
+										{
+											"key": "bca_klikbca[description]",
+											"value": "ampas",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "bca_klikbca[user_id]",
+											"value": "1",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "cstore[store]",
+											"value": "alfamart",
+											"type": "text"
+										},
+										{
+											"key": "cstore[descriptions]",
+											"value": "BAYAR BARANG BELANJAAN AMPAS",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://olshop.test/api/transaksi",
+									"protocol": "http",
+									"host": [
+										"olshop",
+										"test"
+									],
+									"path": [
+										"api",
+										"transaksi"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		}
+	]
+}
